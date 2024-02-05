@@ -52,7 +52,7 @@ const page = () => {
                                 <div> Experience: {job.experience} year(s)</div>
                                 <div> Phone No: {job.phoneNo} </div>
                                 <div className={statusColor} > {job.status} </div>
-                                <a href={job.resumeURL} target='_koushik'>RESUME</a>
+                                <a href={job.resumeURL} target='_koushik' className='text-xl font-semibold text-sky-400'>RESUME</a>
                                 {jobs[index].selectedJobs.map((det, index) => (
                                     <div className='flex flex-col items-center font-semibold text-lg'>
                                         <h2>{det.company}</h2>
